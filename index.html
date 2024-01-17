@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pendaftaran Akun</title>
+</head>
+<body>
+
+    <div id="container">
+
+        <!-- Halaman Pendaftaran -->
+        <div id="halaman-pendaftaran">
+            <h1>Pendaftaran Akun</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <br>
+            <button onclick="lanjutKonfirmasi()">Lanjutkan</button>
+        </div>
+
+        <!-- Halaman Konfirmasi -->
+        <div id="halaman-konfirmasi" class="hidden">
+            <h1>Konfirmasi Pendaftaran</h1>
+            <p>Terima kasih telah mendaftar!</p>
+            <p>Username: <span id="konfirmasi-username"></span></p>
+            <button onclick="kembaliPendaftaran()">Kembali ke Pendaftaran</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
